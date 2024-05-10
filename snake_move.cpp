@@ -76,4 +76,4 @@ void gotoxy( int column, int line )
     coord
     );
   }
-//move
+//Snake

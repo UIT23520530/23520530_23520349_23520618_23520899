@@ -41,18 +41,69 @@ class  Snake{
          if(direction==2)  a[0].first=a[0].first-1;
          if(direction==3)  a[0].second=a[0].second-1;
      }
+     pair<int, int> getSnakeHead()
+     {
+         return a[0];
+     }
 
 
 };
 int Snake::h=-22;
+
+class Border
+{
+    int width, height; //dai x rong man hinh
+public:
+    Border(int w = 104, int h = 26) //width is set to 4 times heigth cuz if not would look weird
+    {
+        width = w;
+        height = h;
+    }
+    void Draw()
+    {
+        for (int i = 0; i < height + 2; i++) //height + 2 to account for added space for border character itself -> full playable space= widthxHeight
+        {
+            if (i == 0 || i == height + 1)// check if it's top or bottom row, if so, draw "="
+            {
+                for (int j = 0; j < width + 2; j++) 
+                {
+                    gotoxy(j, i);
+                    cout << "=";
+                }
+            }
+            else //if not top or bottom, draw sides
+            {
+                gotoxy(0, i);
+                cout << "|";
+                gotoxy(width + 1, i);
+                cout << "|";
+            }
+        }
+        
+    }
+    int detect_snake(Snake a) //output 1 if touched by snake, else output 0, must be run every draw cycle
+    {
+        pair<int, int> head = a.getSnakeHead();
+        int head_collumn = head.first;
+        int head_line = head.second;
+        if (head_line == 0 || head_line == height + 1 || head_collumn == 0 || head_collumn == width + 1)
+        {
+            return 1;
+        }
+        return 0;
+    }
+    
+};
+
 int main(){
     Snake a;
+    Border b;
     int direction=0;
     
     char t;
     while (1){
-        if (kbhit()){
-            t = getch();
+        if (_kbhit()){
+            t = _getch();
             if (t=='a') direction = 2;
             if (t=='w') direction = 3;
             if (t=='d') direction = 0;
@@ -61,6 +112,7 @@ int main(){
        
         system("cls");
       a.Draw();
+      b.Draw();
       a.Move(direction);
       
         Sleep(300);

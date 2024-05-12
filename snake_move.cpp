@@ -20,18 +20,20 @@ class  Snake{
         a[2].first=12;a[2].second=10;
         
      }
-     void Draw()
-     {
-        for(int i=0;i<length;i++)
-        {
-            gotoxy(a[i].first,a[i].second);
+     void Draw(pair <int,int> x)
+     {  
+            gotoxy(x.first,x.second);
+            cout<<" ";
+            gotoxy(a[0].first,a[0].second);
             printf("x");
-        }
+    
 
      }
-     void Move(int direction)
+     void Move(int direction,pair<int,int> & x)
      {   if(abs(h-direction)==2) direction=h;
          h=direction;
+         x.first=a[length-1].first;
+         x.second=a[length-1].second;
          for(int i=length-1;i>0;i--)
          {
             a[i]=a[i-1];
@@ -48,24 +50,25 @@ int Snake::h=-22;
 int main(){
     Snake a;
     int direction=0;
-    
+     pair<int,int> x(100,100);
     char t;
-    while (1){
+     while (1){
+        
         if (kbhit()){
             t = getch();
             if (t=='a') direction = 2;
             if (t=='w') direction = 3;
             if (t=='d') direction = 0;
-            if (t=='x') direction= 1;
+            if (t=='s') direction= 1;
         }
-       
-        system("cls");
-      a.Draw();
-      a.Move(direction);
+     
       
-        Sleep(300);
+      a.Draw(x);
+      a.Move(direction,x);
+        Sleep(150);
     }
 }
+
 void gotoxy( int column, int line )
   {
   COORD coord;

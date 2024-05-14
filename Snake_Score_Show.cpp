@@ -188,8 +188,7 @@ int main(){
         }
       if(c.check_border(a))
       {
-
-
+          system("cls");
           gotoxy(50,5);
           cout<<" Game over :)) ";
           break;

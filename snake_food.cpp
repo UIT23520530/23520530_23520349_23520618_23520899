@@ -159,6 +159,7 @@ class border{
        return 0;
   }
 };
+
 int Snake::h=-22;
 int main(){
     

@@ -487,9 +487,17 @@ namespace Engine
 					{
 						m_data->sound.m_eatSound.play();
 						m_snake.Grow(m_direction);
-
 						m_food.setPosition(rand() % (GAME_FRAME_WIDTH - 32 - 16 + 1) + 16,
 							rand() % (GAME_FRAME_HEIGHT - 32 - 16 + 1) + 16);
+						for (auto body : m_snake.m_body)
+						{
+							if (body.getPosition() == m_food.getPosition())
+							{
+								m_food.setPosition(rand() % (GAME_FRAME_WIDTH - 32 - 16 + 1) + 16,
+									rand() % (GAME_FRAME_HEIGHT - 32 - 16 + 1) + 16);
+							}
+						}
+						
 
 						m_score += 1;
 						m_scoreText.setString("SCORE: " + std::to_string(m_score));

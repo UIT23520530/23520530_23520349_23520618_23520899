@@ -1,5 +1,7 @@
 #pragma once
 
+#include <vector>
+
 #include <SFML/Graphics/Sprite.hpp>
 
 #include <State.hpp>
@@ -16,9 +18,20 @@ namespace Engine
 		sf::Sprite m_gameOver;
 		sf::Text m_retryButton;
 		sf::Text m_exitButton;
+		sf::Text m_scoreText;
+		sf::Text m_highscoreText;
+
+		sf::Text _score;
+		sf::Text _best;
+
+		int m_score;
+		std::vector<int> m_highscores;
+
+		void LoadHighScores();
+		void SaveHighScores();
 
 	public:
-		GameOverState(GameDataRef data);
+		GameOverState(GameDataRef data, int score);
 
 		void Init();
 		void ProcessInput();

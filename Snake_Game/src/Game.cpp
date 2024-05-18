@@ -7,6 +7,12 @@ namespace Engine
 	{
 		m_data->window.create(sf::VideoMode(width, height), title, sf::Style::Close
 			| sf::Style::Titlebar);
+
+		if (!m_data->sound.loadSounds()) {
+			std::cerr << "Failed to load sounds" << std::endl;
+		}
+		m_data->sound.playBackgroundMusic();
+
 		m_data->states.AddState(StateRef(new SplashState(m_data)));
 		Run();
 	}

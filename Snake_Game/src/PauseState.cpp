@@ -60,6 +60,7 @@ namespace Engine
 		{
 			if (sf::Event::Closed == event.type)
 			{
+				m_data->sound.stopAllSounds();
 				m_data->window.close();
 			}
 			else if (event.type == sf::Event::KeyPressed)
@@ -75,11 +76,15 @@ namespace Engine
 			}
 			else if (m_data->input.IsTextClicked(m_continueButton, sf::Mouse::Left, m_data->window))
 			{
+				m_data->sound.m_clickSound.play();
+				m_data->sound.playBackgroundMusic();
 				m_data->states.RemoveState();
 				break;
 			}
 			else if (m_data->input.IsTextClicked(m_newgameButton, sf::Mouse::Left, m_data->window))
 			{
+				m_data->sound.m_clickSound.play();
+				m_data->sound.playBackgroundMusic();
 				m_data->states.AddState(StateRef(new GameplayState(m_data)), true);
 			}
 

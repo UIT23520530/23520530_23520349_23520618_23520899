@@ -25,6 +25,7 @@ namespace Engine
 		{
 			if (sf::Event::Closed == event.type)
 			{
+				m_data->sound.stopAllSounds();
 				m_data->window.close();
 			}
 		}

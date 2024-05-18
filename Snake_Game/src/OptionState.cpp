@@ -1,4 +1,5 @@
 #include <OptionState.hpp>
+#include <HighScoreState.hpp>
 #include <GameplayState.hpp>
 #include <DEFINITIONS.hpp>
 
@@ -52,18 +53,28 @@ namespace Engine
 		{
 			if (sf::Event::Closed == event.type)
 			{
+				m_data->sound.stopAllSounds();
 				m_data->window.close();
 			}
 
 			if (m_data->input.IsTextClicked(m_gameplayButton, sf::Mouse::Left,
 				m_data->window))
 			{
+				m_data->sound.m_clickSound.play();
 				m_data->states.AddState(StateRef(new GameplayState(m_data)), true);
+			}
+
+			if (m_data->input.IsTextClicked(m_highscoreButton, sf::Mouse::Left, m_data->window))
+			{
+				m_data->sound.m_clickSound.play();
+				m_data->states.AddState(StateRef(new HighScoreState(m_data)), true);
 			}
 
 			if (m_data->input.IsTextClicked(m_exitButton, sf::Mouse::Left,
 				m_data->window))
 			{
+				m_data->sound.m_clickSound.play();
+				m_data->sound.m_backgroundMusic.stop();
 				std::cout << "EXIT" << std::endl;
 				m_data->window.close();
 			}

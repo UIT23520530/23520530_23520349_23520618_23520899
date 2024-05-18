@@ -3,6 +3,7 @@
 #include <SFML/Graphics/Sprite.hpp>
 #include <SFML/Graphics/Text.hpp>
 
+
 #include <State.hpp>
 #include <Game.hpp>
 #include <Snake.hpp>
@@ -57,6 +58,9 @@ namespace Engine
 		bool m_isLevel3Clicked;
 		bool m_isLevel4Clicked;
 		bool m_isLevel5Clicked;
+
+
+
 		
 	public:
 		GameplayState(GameDataRef data);

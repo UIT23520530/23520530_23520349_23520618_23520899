@@ -44,3 +44,10 @@
 #define WALL_FILEPATH "assets/resources/textures/wall.png"
 #define GRASS_FILEPATH "assets/resources/textures/grass.png"
 #define GAME_OVER_TITLE_FILEPATH "assets/resources/textures/Game Over.png"
+
+#define BACKGROUND_SOUND_FILEPATH "assets/audio/Background music.wav"
+#define HIT_SOUND_FILEPATH "assets/audio/Hit.wav"
+#define EAT_FOOD_SOUND_FILEPATH "assets/audio/Eat food.wav"
+#define GAMEOVER_SOUND_FILEPATH "assets/audio/Game over.wav"
+#define BUTTON_CLICK_SOUND_FILEPATH "assets/audio/Button click.wav"
+#define SNAKE_MOVE_SOUND_FILEPATH "assets/audio/Move.wav"

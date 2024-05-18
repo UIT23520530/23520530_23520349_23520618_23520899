@@ -8,6 +8,7 @@
 #include <StateMan.hpp>
 #include <AssetMan.hpp>
 #include <InputMan.hpp>
+#include <Sound.hpp>
 
 namespace Engine
 {
@@ -17,6 +18,7 @@ namespace Engine
 		sf::RenderWindow window;
 		AssetMan assets;
 		InputMan input;
+		Sound sound;
 	};
 	typedef std::shared_ptr<GameData> GameDataRef;
 	

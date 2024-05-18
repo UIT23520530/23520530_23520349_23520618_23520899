@@ -38,13 +38,14 @@ namespace Engine
 		{
 			if (sf::Event::Closed == event.type)
 			{
+				m_data->sound.stopAllSounds();
 				m_data->window.close();
 			}
 
 			if (m_data->input.IsSpriteClicked(m_playButton, sf::Mouse::Left,
 				m_data->window))
 			{
-				
+				m_data->sound.m_clickSound.play();
 				m_data->states.AddState(StateRef(new OptionState(m_data)), true);
 			}
 		}

@@ -26,6 +26,7 @@ namespace Engine
 
 	void GameplayState::Init()
 	{
+
 		std::cout << "Gameplay State" << std::endl;
 
 		m_data->assets.LoadTexture("Game Background",
@@ -144,10 +145,12 @@ namespace Engine
 	void GameplayState::ProcessInput()
 	{
 		sf::Event event;
+		bool check = false;
 		while (m_data->window.pollEvent(event))
 		{
 			if (sf::Event::Closed == event.type)
 			{
+				m_data->sound.stopAllSounds();
 				m_data->window.close();
 			}
 
@@ -158,6 +161,7 @@ namespace Engine
 					|| (m_ismodernButtonClicked && (m_isLevel1Clicked || m_isLevel2Clicked
 						|| m_isLevel3Clicked || m_isLevel4Clicked || m_isLevel5Clicked)))
 				{
+					m_data->sound.m_clickSound.play();
 					m_isplayButtonClicked = true;
 				}
 			}
@@ -170,10 +174,12 @@ namespace Engine
 					|| (m_ismodernButtonClicked && (m_isLevel1Clicked || m_isLevel2Clicked
 						|| m_isLevel3Clicked || m_isLevel4Clicked || m_isLevel5Clicked)))
 				{
+					m_data->sound.m_clickSound.play();
 					m_data->states.AddState(StateRef(new GameplayState(m_data)), true);
 				}
 				else
 				{
+					m_data->sound.m_clickSound.play();
 					m_data->states.AddState(StateRef(new OptionState(m_data)), true);
 				}
 			}
@@ -181,6 +187,7 @@ namespace Engine
 			if (m_data->input.IsTextClicked(m_classicButton, sf::Mouse::Left,
 				m_data->window))
 			{
+				m_data->sound.m_clickSound.play();
 				m_isclassicButtonClicked = true;
 				m_ismodernButtonClicked = false;
 			}
@@ -188,6 +195,7 @@ namespace Engine
 			else if (m_data->input.IsTextClicked(m_modernButton, sf::Mouse::Left,
 				m_data->window))
 			{
+				m_data->sound.m_clickSound.play();
 				m_ismodernButtonClicked = true;
 				m_isclassicButtonClicked = false;
 			}
@@ -290,18 +298,26 @@ namespace Engine
 					break;
 				case sf::Keyboard::Down:
 				case sf::Keyboard::S:
+					
 					newDirection = { 0.f, 16.f };
 					break;
 				case sf::Keyboard::Right:
 				case sf::Keyboard::D:
+					
 					newDirection = { 16.f, 0.f };
 					break;
 				case sf::Keyboard::Left:
 				case sf::Keyboard::A:
+					
 					newDirection = { -16.f, 0.f };
 					break;
 				case sf::Keyboard::Escape:
-					m_data->states.AddState(StateRef(new PauseState(m_data)), false);
+					if (m_isplayButtonClicked)
+					{
+						m_data->sound.m_clickSound.play();
+						m_data->sound.m_backgroundMusic.stop();
+						m_data->states.AddState(StateRef(new PauseState(m_data)), false);
+					}
 					break;
 				default:
 					break;
@@ -310,6 +326,7 @@ namespace Engine
 				if (std::abs(m_direction.x) != std::abs(newDirection.x)
 					|| std::abs(m_direction.y) != std::abs(newDirection.y))
 				{
+					m_data->sound.m_moveSound.play();
 					m_direction = newDirection;
 				}
 			}
@@ -317,6 +334,7 @@ namespace Engine
 			if (m_data->input.IsSpriteClicked(m_level1, sf::Mouse::Left,
 				m_data->window))
 			{
+				m_data->sound.m_clickSound.play();
 				m_isLevel1Clicked = true;
 				m_isLevel2Clicked = false;
 				m_isLevel3Clicked = false;
@@ -327,6 +345,7 @@ namespace Engine
 			else if (m_data->input.IsSpriteClicked(m_level2, sf::Mouse::Left,
 				m_data->window))
 			{
+				m_data->sound.m_clickSound.play();
 				m_isLevel1Clicked = false;
 				m_isLevel2Clicked = true;
 				m_isLevel3Clicked = false;
@@ -337,6 +356,7 @@ namespace Engine
 			else if (m_data->input.IsSpriteClicked(m_level3, sf::Mouse::Left,
 				m_data->window))
 			{
+				m_data->sound.m_clickSound.play();
 				m_isLevel1Clicked = false;
 				m_isLevel2Clicked = false;
 				m_isLevel3Clicked = true;
@@ -347,6 +367,7 @@ namespace Engine
 			else if (m_data->input.IsSpriteClicked(m_level4, sf::Mouse::Left,
 				m_data->window))
 			{
+				m_data->sound.m_clickSound.play();
 				m_isLevel1Clicked = false;
 				m_isLevel2Clicked = false;
 				m_isLevel3Clicked = false;
@@ -357,6 +378,7 @@ namespace Engine
 			else if (m_data->input.IsSpriteClicked(m_level5, sf::Mouse::Left,
 				m_data->window))
 			{
+				m_data->sound.m_clickSound.play();
 				m_isLevel1Clicked = false;
 				m_isLevel2Clicked = false;
 				m_isLevel3Clicked = false;
@@ -428,6 +450,8 @@ namespace Engine
 				break;
 			}
 
+			if (m_snakeSpeed <= 0)
+				m_snakeSpeed = 0.001;
 			if (m_elapsedTime > m_snakeSpeed)
 			{
 				if (m_isplayButtonClicked)
@@ -438,8 +462,11 @@ namespace Engine
 						{
 							if (m_snake.IsOn(wall))
 							{
+								m_data->sound.m_hitSound.play();
 								sf::sleep(sf::milliseconds(1000));
-								m_data->states.AddState(StateRef(new GameOverState(m_data)), true);
+								m_data->sound.m_gameoverSound.play();
+								m_data->sound.m_backgroundMusic.stop();
+								m_data->states.AddState(StateRef(new GameOverState(m_data, m_score)), true);
 								break;
 							}
 						}
@@ -458,6 +485,7 @@ namespace Engine
 
 					if (m_snake.IsOn(m_food))
 					{
+						m_data->sound.m_eatSound.play();
 						m_snake.Grow(m_direction);
 
 						m_food.setPosition(rand() % (GAME_FRAME_WIDTH - 32 - 16 + 1) + 16,
@@ -465,6 +493,7 @@ namespace Engine
 
 						m_score += 1;
 						m_scoreText.setString("SCORE: " + std::to_string(m_score));
+						m_snakeSpeed -= 0.001;
 					}
 					else
 					{
@@ -473,8 +502,11 @@ namespace Engine
 
 					if (m_snake.IsSelfCollision())
 					{
+						m_data->sound.m_hitSound.play();
 						sf::sleep(sf::milliseconds(1000));
-						m_data->states.AddState(StateRef(new GameOverState(m_data)), true);
+						m_data->sound.m_gameoverSound.play();
+						m_data->sound.m_backgroundMusic.stop();
+						m_data->states.AddState(StateRef(new GameOverState(m_data, m_score)), true);
 					}
 
 					m_elapsedTime = 0.0f;

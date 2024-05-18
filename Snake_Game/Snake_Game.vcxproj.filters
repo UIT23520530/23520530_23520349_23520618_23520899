@@ -51,6 +51,12 @@
     <ClCompile Include="src\PauseState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\HighScoreState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\StateMan.hpp">
@@ -92,12 +98,20 @@
     <ClInclude Include="include\PauseState.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\HighScoreState.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sound.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Font Include="assets\fonts\PressStart2P-Regular.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="assets\fonts\OFL.txt" />
+    <Text Include="assets\Highscore.txt" />
+    <Text Include="assets\Highscores.txt" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="assets\resources\textures\Splash Background.png">
@@ -145,5 +159,25 @@
     <Image Include="assets\resources\textures\Game Over.png">
       <Filter>Resource Files</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="assets\audio\Background music.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="assets\audio\Button click.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="assets\audio\Eat food.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="assets\audio\Game over.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="assets\audio\Hit.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="assets\audio\Move.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
   </ItemGroup>
 </Project>

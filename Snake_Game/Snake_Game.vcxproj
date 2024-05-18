@@ -110,7 +110,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SFML_PATH)\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-system-s-d.lib;sfml-window-s-d.lib;sfml-graphics-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-system-s-d.lib;sfml-window-s-d.lib;sfml-graphics-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;sfml-audio-s-d.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -129,7 +129,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SFML_PATH)\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-system-s.lib;sfml-window-s.lib;sfml-graphics-s.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-system-s.lib;sfml-window-s.lib;sfml-graphics-s.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;sfml-audio-s.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -137,12 +137,14 @@
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\GameOverState.cpp" />
     <ClCompile Include="src\GameplayState.cpp" />
+    <ClCompile Include="src\HighScoreState.cpp" />
     <ClCompile Include="src\InputMan.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\MainMenuState.cpp" />
     <ClCompile Include="src\OptionState.cpp" />
     <ClCompile Include="src\PauseState.cpp" />
     <ClCompile Include="src\Snake.cpp" />
+    <ClCompile Include="src\Sound.cpp" />
     <ClCompile Include="src\SplashState.cpp" />
     <ClCompile Include="src\StateMan.cpp" />
   </ItemGroup>
@@ -152,11 +154,13 @@
     <ClInclude Include="include\Game.hpp" />
     <ClInclude Include="include\GameOverState.hpp" />
     <ClInclude Include="include\GameplayState.hpp" />
+    <ClInclude Include="include\HighScoreState.hpp" />
     <ClInclude Include="include\InputMan.hpp" />
     <ClInclude Include="include\MainMenuState.hpp" />
     <ClInclude Include="include\OptionState.hpp" />
     <ClInclude Include="include\PauseState.hpp" />
     <ClInclude Include="include\Snake.hpp" />
+    <ClInclude Include="include\Sound.hpp" />
     <ClInclude Include="include\SplashState.hpp" />
     <ClInclude Include="include\State.hpp" />
     <ClInclude Include="include\StateMan.hpp" />
@@ -166,6 +170,8 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="assets\fonts\OFL.txt" />
+    <Text Include="assets\Highscore.txt" />
+    <Text Include="assets\Highscores.txt" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="assets\resources\textures\food.png" />
@@ -183,6 +189,14 @@
     <Image Include="assets\resources\textures\Splash Background.png" />
     <Image Include="assets\resources\textures\Title.png" />
     <Image Include="assets\resources\textures\wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="assets\audio\Background music.wav" />
+    <Media Include="assets\audio\Button click.wav" />
+    <Media Include="assets\audio\Eat food.wav" />
+    <Media Include="assets\audio\Game over.wav" />
+    <Media Include="assets\audio\Hit.wav" />
+    <Media Include="assets\audio\Move.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

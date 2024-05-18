@@ -90,82 +90,84 @@ D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(279,77): warning C4
 D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(279,77): warning C4244:         [
 D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(279,77): warning C4244:             T=float
 D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(279,77): warning C4244:         ]
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(446,20): warning C4305: '=': truncation from 'double' to 'float'
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(452,20): warning C4305: '=': truncation from 'double' to 'float'
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(455,20): warning C4305: '=': truncation from 'double' to 'float'
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(458,20): warning C4305: '=': truncation from 'double' to 'float'
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(465,20): warning C4305: '=': truncation from 'double' to 'float'
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(503,51): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(502,68): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(507,28): warning C4305: '-=': truncation from 'double' to 'float'
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(538,100): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(538,100): warning C4244:         with
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(538,100): warning C4244:         [
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(538,100): warning C4244:             T=float
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(538,100): warning C4244:         ]
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(538,81): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(538,81): warning C4244:         with
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(538,81): warning C4244:         [
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(538,81): warning C4244:             T=float
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(538,81): warning C4244:         ]
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(557,97): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(557,97): warning C4244:         with
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(557,97): warning C4244:         [
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(557,97): warning C4244:             T=float
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(557,97): warning C4244:         ]
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(557,78): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(557,78): warning C4244:         with
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(557,78): warning C4244:         [
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(557,78): warning C4244:             T=float
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(557,78): warning C4244:         ]
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(577,93): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(577,93): warning C4244:         with
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(577,93): warning C4244:         [
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(577,93): warning C4244:             T=float
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(577,93): warning C4244:         ]
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(577,74): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(577,74): warning C4244:         with
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(577,74): warning C4244:         [
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(577,74): warning C4244:             T=float
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(577,74): warning C4244:         ]
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(597,93): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(597,93): warning C4244:         with
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(597,93): warning C4244:         [
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(597,93): warning C4244:             T=float
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(597,93): warning C4244:         ]
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(597,74): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(597,74): warning C4244:         with
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(597,74): warning C4244:         [
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(597,74): warning C4244:             T=float
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(597,74): warning C4244:         ]
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(617,93): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(617,93): warning C4244:         with
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(617,93): warning C4244:         [
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(617,93): warning C4244:             T=float
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(617,93): warning C4244:         ]
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(617,74): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(617,74): warning C4244:         with
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(617,74): warning C4244:         [
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(617,74): warning C4244:             T=float
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(617,74): warning C4244:         ]
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(637,93): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(637,93): warning C4244:         with
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(637,93): warning C4244:         [
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(637,93): warning C4244:             T=float
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(637,93): warning C4244:         ]
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(637,74): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(637,74): warning C4244:         with
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(637,74): warning C4244:         [
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(637,74): warning C4244:             T=float
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(637,74): warning C4244:         ]
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(658,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(658,54): warning C4244:         with
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(658,54): warning C4244:         [
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(658,54): warning C4244:             T=float
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(658,54): warning C4244:         ]
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(658,35): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(658,35): warning C4244:         with
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(658,35): warning C4244:         [
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(658,35): warning C4244:             T=float
-D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(658,35): warning C4244:         ]
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(435,20): warning C4305: '=': truncation from 'double' to 'float'
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(441,20): warning C4305: '=': truncation from 'double' to 'float'
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(444,20): warning C4305: '=': truncation from 'double' to 'float'
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(447,20): warning C4305: '=': truncation from 'double' to 'float'
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(454,20): warning C4305: '=': truncation from 'double' to 'float'
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(491,51): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(490,68): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(497,53): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(496,70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(504,28): warning C4305: '-=': truncation from 'double' to 'float'
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(535,100): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(535,100): warning C4244:         with
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(535,100): warning C4244:         [
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(535,100): warning C4244:             T=float
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(535,100): warning C4244:         ]
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(535,81): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(535,81): warning C4244:         with
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(535,81): warning C4244:         [
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(535,81): warning C4244:             T=float
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(535,81): warning C4244:         ]
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(554,97): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(554,97): warning C4244:         with
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(554,97): warning C4244:         [
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(554,97): warning C4244:             T=float
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(554,97): warning C4244:         ]
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(554,78): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(554,78): warning C4244:         with
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(554,78): warning C4244:         [
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(554,78): warning C4244:             T=float
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(554,78): warning C4244:         ]
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(574,93): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(574,93): warning C4244:         with
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(574,93): warning C4244:         [
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(574,93): warning C4244:             T=float
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(574,93): warning C4244:         ]
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(574,74): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(574,74): warning C4244:         with
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(574,74): warning C4244:         [
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(574,74): warning C4244:             T=float
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(574,74): warning C4244:         ]
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(594,93): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(594,93): warning C4244:         with
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(594,93): warning C4244:         [
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(594,93): warning C4244:             T=float
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(594,93): warning C4244:         ]
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(594,74): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(594,74): warning C4244:         with
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(594,74): warning C4244:         [
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(594,74): warning C4244:             T=float
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(594,74): warning C4244:         ]
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(614,93): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(614,93): warning C4244:         with
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(614,93): warning C4244:         [
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(614,93): warning C4244:             T=float
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(614,93): warning C4244:         ]
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(614,74): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(614,74): warning C4244:         with
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(614,74): warning C4244:         [
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(614,74): warning C4244:             T=float
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(614,74): warning C4244:         ]
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(634,93): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(634,93): warning C4244:         with
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(634,93): warning C4244:         [
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(634,93): warning C4244:             T=float
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(634,93): warning C4244:         ]
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(634,74): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(634,74): warning C4244:         with
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(634,74): warning C4244:         [
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(634,74): warning C4244:             T=float
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(634,74): warning C4244:         ]
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(655,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(655,54): warning C4244:         with
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(655,54): warning C4244:         [
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(655,54): warning C4244:             T=float
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(655,54): warning C4244:         ]
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(655,35): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(655,35): warning C4244:         with
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(655,35): warning C4244:         [
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(655,35): warning C4244:             T=float
+D:\STUDYING\CODE\SS004_KNNN\Snake_Game\src\GameplayState.cpp(655,35): warning C4244:         ]
   Snake_Game.vcxproj -> D:\STUDYING\CODE\SS004_KNNN\x64\Debug\Snake_Game.exe
